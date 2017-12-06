@@ -86,11 +86,17 @@ const organizeFileByType = (from, files) => {
  */
 const copyFiles = (files, to) => {
     files.forEach((file) => {
-        const destination = path.join(to, file.name);
+        let destination = path.join(to, file.name);
+
+        if (fs.existsSync(destination)) {
+            const now = new Date();
+            destination = path.join(to, now.toISOString() + '-' + file.name);
+        }
+
         fs.copyFileSync(file.path, destination, 0);
         fs.unlinkSync(file.path);
 
-        console.log('Move: ' + file.path + ' -> '+ destination)
+        console.log('Move: ' + file.path + ' -> ' + destination)
     });
 };
 
