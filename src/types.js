@@ -1,7 +1,33 @@
 const SCRIPTS    = {
     name : "scripts",
     types: [
-        'mysql', 'js', 'sh', 'php', 'c', 'scss', 'sass', 'less', 'stylus', 'html', 'h', 'cpp', 'jsx', 'vue', 'json', 'css', 'rb', 'gitignore'
+        'phar',
+        'asm',
+        'dist',
+        'lock',
+        'babelrc',
+        'md',
+        'makefile',
+        'mysql',
+        'js',
+        'sh',
+        'php',
+        'c',
+        'scss',
+        'sass',
+        'less',
+        'stylus',
+        'html',
+        'h',
+        'cpp',
+        'jsx',
+        'vue',
+        'json',
+        'css',
+        'rb',
+        'gitignore',
+        'yml',
+        'yaml'
     ]
 };
 const DOCUMENTS  = {
