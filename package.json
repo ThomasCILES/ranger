@@ -1,7 +1,7 @@
 {
-  "name": "Organizer",
+  "name": "Ranger",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Thomas CILES <thomas.ciles.perso@gmail.com>",
+  "main": "bin/ranger.js",
+  "author": "Thomas CILES <thomasciles@gmail.com>",
   "license": "MIT"
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const app  = require('../index');
+const app  = require('../src/index');
 
 const from = (!!process.argv[2]) ? process.argv[2] : '.';
 
