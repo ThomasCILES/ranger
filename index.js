@@ -124,8 +124,10 @@ const init = (from) => {
             if (organizedFiles[type].length) {
                 const destination = path.join(fromPath, type);
 
-                deleteFolderRecursive(destination);
-                fs.mkdirSync(destination);
+                // deleteFolderRecursive(destination);
+                if (!fs.existsSync(destination)) {
+                    fs.mkdirSync(destination);
+                }
 
                 showFileType(type);
                 copyFiles(organizedFiles[type], destination);
