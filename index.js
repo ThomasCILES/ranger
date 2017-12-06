@@ -88,6 +88,7 @@ const copyFiles = (files, to) => {
     files.forEach((file) => {
         const destination = path.join(to, file.name);
         fs.copyFileSync(file.path, destination, 0);
+        fs.unlinkSync(file.path);
 
         console.log('Move: ' + file.path + ' -> '+ destination)
     });
